@@ -1,0 +1,803 @@
+What is a language?
+	Its used for communication.
+	
+What are the things a language consists?
+	alphabets
+	grammer
+	
+
+What is a computer language?
+	It's used to communicate with the computer.
+	
+Binary Language (or) Machine Level Language (or) Low Level Language
+
+(0,1)
+
+	
+
+High Level Language
+	Its equalent to English(a-z), numbers(0-9), and some special character(&, @, +, = etc).
+	
+	C, C++, C#, Python, Java etc.
+	
+	The computer will not understand the HLL.
+	
+	keywords are like alphabets of a HLL.
+	
+	syntax like grammer of a HLL.
+	
+	
+	
+	
+Java compiler
+	It will convert the java program into byte code (not binary code).
+	
+Java interpreter	
+	It will convert java byte code into binary code.
+	
+To execute a java progran we require
+
+1. java compiler
+
+2. java interpreter
+
+3. editor
+
+Steps to execute a java program.
+1. Write your program by using any editor.
+
+	You must save your program by using a name with an extension .java.
+	
+	While saving your program give the name of your class ande .java(First.java)
+
+2. You have to compile the program by using the following command.
+
+	>javac First.java
+
+3. You need to execute the program by using the following command.
+	
+	>java First (dont give First.class)
+
+
+	
+	
+	
+You must install jdk in our system to compile and execute the program.
+
+Java means "Write Once Run Anywhere".
+
+1. After compiling the java program, we will get .class file.
+
+2. Later you can this .class file in any other computer, and interpret your program. 
+
+1. JDK == Java Development Kit
+2. JRE == Java Runtime Environment
+3. JVM == Java Virtual Machine
+
+In java
+1. Every program must be written inside a class.
+
+2. Inside your class you must write a method or function main().
+
+	Function or method are two types
+		1. simple (void)
+		
+		2. return type (int, double, String , etc)
+	
+3. To run a program you must call your function(main()).
+	
+	1. In general we want to call a function (method) with an object in any oops language.
+
+	First f = new First();
+	
+	f.main();
+	
+	But without creating any object for our class we are able to excute main() method. But how?
+	
+	Because the "static" keyword.
+	
+	To call a static method, there is no rule to create any object to the class.
+	
+	Here main() method automatically called by the java runtime, thats why main() should defined with static main().
+	
+	System.out.println() --> is used to display anything on computer's output device.
+	
+		
+		1. println() is a method
+		2. out is an object
+		3. System is a class.
+		
+	When you want to write a java program, we must get help from existing java libray.
+	
+	
+Data?
+Steps in a program.
+
+1. accept data (input)
+2. process the accepted data
+3. show the data (output)
+
+Datatype: The type of data our program deals with.
+
+Datatypes
+1. int == 4 bytes (32 bits) 
+2. float
+3. long
+4. double
+5. char
+6. boolean
+7. String(class)
+
+Data Type	Size	Description
+
+byte		1 byte	Stores whole numbers from -128 to 127
+
+short		2 bytes	Stores whole numbers from -32,768 to 32,767
+
+int			4 bytes	Stores whole numbers from -2,147,483,648 to
+													2,147,483,647
+long		8 bytes	Stores whole numbers from 		
+			-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+float		4 bytes	Stores fractional numbers. Sufficient for 
+			storing 6 to 7 decimal digits
+
+double		8 bytes	Stores fractional numbers. Sufficient for 
+			storing 15 decimal digits
+
+boolean		1 bit	Stores true or false values
+
+char		2 bytes	Stores a single character/letter or unicode 
+				values
+
+int n1 = 10.5;
+
+int n2 = 20;
+
+int r = n1 + n2;
+
+n1 = 30;
+
+System.out.println(r);	
+
+here n1, n2 and r are variables.
+
+	
+Eclipse
+
+IDE ==> Integrated Development Environment.
+
+Java Project: Where we can save number of java programs.
+
+
+int/int = int
+int/double = double
+double/int = double
+double/double = double
+
+By default a fractional number (3.14) will be stored in double.
+
+Operators
+1. Simple
+	= -> Assignment operator
+	int n1 = 100;
+	
+2. Arithmetic Operators
++, -, *, / (quotient) % (modulus or remaindor)
+
+3. Comparision Operators
+>, <, >=, <=, ==, != 
+output: boolean(t/f)
+
+int n1 = 100;
+int n2 = 200;
+
+n1 > n2 = f
+n2 > n1 = t
+
+n1 == n2 = f
+
+n1 != n2 = t
+
+4. Logical Operators
+AND, OR, NOT
+&&, ||, !
+
+Truth Table
+1. &&
+
+C1		&&		C2			Result
+T				T			T
+T				F			F
+F				T			F
+F				F			F
+
+2. ||
+
+C1		||		C2			Result	
+T				T			T
+T				F			T
+F				T			T
+F				F			F
+
+3. !
+
+C		!C
+T		F
+F		T
+
+
+
+Condition?
+	Either "true" or "false"
+	
+	20 > 10 == True
+	20 < 10 == False
+	
+	
+Programming Constructs
+
+1. Decision Constructs
+	1.if
+	
+		if(conditon) {
+			process;
+		}
+		
+		
+		
+		1. if the conditon is "true", the process will be executing.
+		
+		2. if the conditon is "false", nothing will be executing.
+		
+	
+	2. if else
+	
+		if(condition) {
+			process1;
+		}
+		else {
+			process2;
+		}
+		
+		1. if the conditon is "true", the process1 will be executing.
+		
+		2. if the conditon is "false", the process2 will be executing.
+		
+		
+	3. if else if
+	4. switch
+	
+2. Looping Constructs
+	1. while
+		
+		while(condition) {
+			process;
+		}
+		
+		
+		
+		
+	2. do while
+	3. for
+	4. for each
+	
+Comments in the program
+
+1. Single line comment
+
+// line 1
+
+
+2. multi lines comment
+/*
+line 1
+line 2
+
+*/
+
+Steps in a program.
+
+1. accept data (input).
+2. validate the input(s).
+3. process the accepted data
+4. show the data (output).
+
+
+ASCII ==> American Standard Code for Information Interchane (1B)
+
+[UNICODE ==> 2B]
+
+A-->65
+B-->66
+C-->67
+.
+.
+.
+.
+Z-->90
+
+int n = 2635;
+
+int r = 5362;
+
+Primitive Datatypes
+	int, long, float, double, char, boolean
+	
+Non-primitive data types
+	Integer, Long, Float, Double, Char, Boolean
+	
+
+==========================================================
+Arrays
+==========================================================
+1. An array is a container object that holds a fixed number of values of a single type.
+
+2. After creation, its length is fixed.
+
+3. An array is a collection of similar types of data.
+
+4. Arrays in Java can store primitive and non-primitive types of data in it.
+
+5. Declaring an Array
+	
+	datatype [] arrayName;
+	
+	double[] prices;
+	
+6. To define number of elements that array can hold, we have to allocate the memory for the array.
+
+	double[] prices;
+	
+	prices = new double[20];
+	
+	double[] prices = new double[20];
+	
+	1. Here the array can store 20 elements.
+	
+	2. We can also say that the size or length of the array is 20.
+	
+	prices[0] = 123.56;
+	prices[1] = 378.50;
+	.
+	.
+	.
+	.
+	prices[19] = 265.00;
+	
+
+6. Index of an array always starts with 0.
+
+7. Last index of an array is 'size - 1' (20-1)
+
+8. We can initialize an array like the following
+	
+	int[] ages = {24, 23, 35, 67, 89, 22};
+	
+	1. In this case we have not provided size of the array.
+	
+	2. In this case the Java compiler automatically specifies the sie of the array by counting the number of elements in the array.
+	
+break ==> will make execution out side of th loop.
+	
+	
+Sorting:-
+
+int []nums = { 8,1,3,9,5 };
+
+	
+	for(int i=0; i<nums.length; i++) {
+		for(int j=i+1; j<nums.length; j++) {
+			if(nums[i] > nums[j]) {
+				int t = nums[i]; // 8
+				nums[i] = nums[j]; // 1 { 1,1,3,9,5 }; {1,3,3,9,5} // 1,3, 5, 9, 5
+				nums[j] = t; // 1 { 1,8,3,9,5 }; // {1,3,8,9,5}// 1,3,5,9,8
+			}
+		}
+	}
+
+	
+	{1,8,3,9,5}
+	
+o/p: {1, 3, 5, 8, 9 }
+
+s1.compareTo(s2) > 0,+,-
+
+if s1 > s2, it returns positive number  
+if s1 < s2, it returns negative number  
+if s1 == s2, it returns 0  
+
+
+=====================================================================
+OOPS
+======================================================================
+OOPS==> Object Oriented Programming System.
+
+1. Object means a real world entity such as account, pen, table etc.
+
+2. Object oriented programming is a methodology or paradism to design a program using classes and objects.
+
+3. It simplifies software development and maintanance by providing service.
+
+4. Some of the concepts in OOPS
+	1. object
+	
+	2. class
+	
+	3. Inheritance
+	
+	4. Polymarphism
+	
+	5. Abstraction
+	
+	6. Encapsulation
+	
+1.Object
+	In object oriented programming, objects are the things you think about first in designing a program and they are also the units of code that are eventually derived from the process.
+	
+2. Class
+	In object oriented programming, a class is a blueprint for creating objects (a particular data structure), providing intial values for state (member variables or attributes), and implementations of behavior (member function or method).
+	
+	The objects created using the class we have created already.
+	
+	A class contains set of attributes and methods.
+	
+5. Abstraction
+	1. Abstraction is selecting data from a larger pool to show only relevent detaills of the object.
+	
+	2. It helps in reducing programming complexity and efforts.
+
+6. Encapsulation
+	1. In general, encapsulation is a process of wrapping similar code in one place.
+	
+	2. we can bundle data members and methods that operate together inside a class.
+	
+	
+	
+
+You need to protect the data (attributes) by using private specifier.
+
+
+	
+	
+Access Specifiers
+1. public
+	There is no protection for the data.
+	
+	public members can be accessed outside the class also.
+	
+2. private
+	we can protect the data.
+	
+	private member can not be accessed outside the class. (They can be accessed inside the same class only).
+3. protected
+	protected member
+		1. public in derived classes
+		2. private in non-derived classes
+		
+4. default
+
+Class
+	member data.
+	
+	methods
+	
+	setters
+		special methods which are used to assign the attributes of a class.
+	
+	getters
+		special methods which are used to get the value of the attributes of a class.
+	
+	constructors
+		constructor is nothing but a method.
+		
+		constructor should have same name like class name.
+		
+		The constructor executes whenever we create the object.
+		
+		constructor should not return any value including the void.
+				
+		constructor can be overloaded.(Overloading a method)
+		
+		if you are not created any constructor for your class, the java compiler will write a default constructor automatically. (If you write any parameterized constructor, then the compiler never writes default constructor).
+		
+		public Product() {
+		
+		}
+		
+		The compiler will write default constructor(the constructor with out any line of the code and without any parameter).
+		
+		if you define a parameterized constructor for your class, then the compiler will never write the default constructor.
+
+Inside a class you should not use i/o statements.
+		
+Overloading:-
+
+1. Methods in java can be overloaded.
+
+2. Overloading can be acheived through parameter count, and type of the parameter.
+
+
+Overriding:-
+
+1. Inheritance is there in java with out we do inheritnce.
+
+2. Every class in jave must inherit from existing class Object.
+
+3. By default toString() method will return the name of the class with package(com.oops.demo.Product@36aa7bc2).	
+
+4. We can override the toString() method by using the @Override annotation.
+
+this keyword.
+	this means the present class
+
+Reference and Object
+
+If you create a variable for a class without new, that is called the reference.
+
+Employee e1;
+
+If you create a variable for a class with new, that is called the object.
+
+e1 = new Employee();
+
+Employee e2 = new Employee();
+
+Employee employees[] = new Employee[20];
+Here we created 20 employee references.(Not the object).
+
+employees[0] = new Employee();
+Here we created an employee object and reffered that object with employees[0].
+
+
+Static keyword in java.
+
+1. Static keyword in java indicates that a partcular member is not an instance, but rather a part of a type.
+
+2. The static member will be shared among all instances of the class, so we we will create only one instance for a static variable.
+
+3. If any member in a class declared static, it means that even before the class gets instantiated, all the static member can be accessed and become active.
+
+4. In contrast to this, non-static members of the class will not  exists where there is no object is created.
+
+Math.PI;
+Math.pow(..)
+
+Inheritence
+	Deriving a new class(es) from an existing class.
+	
+	atrributes and methods can be derived to a new class from an existing class.
+	
+	In case reality only methods should be derived( dont derive attributes).
+	
+	Inheritene === Reusabiltiy
+	
+	What are really required, they alone should be derived. 
+	
+	Dont derive unwanted things.
+
+	Dont derive the attributes of class.
+
+Person
+private:
+	id
+	name
+	state
+	country
+
+public:
+	getId()
+	setId(..)
+	
+	getName()
+	setName(..)
+	
+	getState()
+	setState(..)
+	
+	getCountry()
+	setCountry(..)
+	
+	toString()
+	
+	
+
+Employee extends Person
+
+private:
+	
+	salary
+	qualification
+	
+	
+
+public:
+	Employee()
+	Employee(...)
+	
+	
+
+Customer extends Person
+private:
+
+	address
+	
+public:
+	Customer()
+	Customer(..)
+
+	
+Protected: It is same like private (non-derived class), but for derived class its public.
+
+protected member
+	1. public in derived classes
+	2. private in non-derived classes
+
+Base class reference can hold the object of the derived class.
+
+Abstract classes
+
+Abstraction:- Abstraction is a process of hiding the implementation details and sharing only functionality for the user.
+
+Abstract class
+1. You need to define an abstract class with the keyword abstract
+
+public abstract class Shape {
+	// fields
+	// methods
+	// abstract methods
+}
+
+2. If a class is having atleast one abstract method, that class is abstract class.
+public abstract class Shape {
+	// fields
+	// methods
+	
+	public abstract void computeArea();
+}
+
+3. A method without method body, is an abstract method.
+
+4. The abstract method can only be defined by an abstract class.
+
+5. Even though the class is not written any abstract method, that class can be an abstract class.
+
+6. We should not create any object for an abstract classes.
+
+7. We can create a reference for abstract class.
+
+8. Abstract must be a base class.
+
+9. You must inherit a class(es) from an abstract class.
+
+10. You can create object for derived class(es), and the abstract class reference can hold the object of the derived class.
+
+
+Polymarphism?
+	marph => face
+	
+	polymarphism => different faces.
+
+1. Compile time polymarphism
+	method overloading
+	
+2. Runtime polymarphism
+	Abstract class and interface
+	
+Interfaces
+	Interface is like abstract class, but in interfaces we must define all methods as abstract methods.
+	
+Abstraction in abstract classes --------->100 % and lessthan 100%
+Abstraction in interfaces --------------->  100 %
+	
+10000 - 10000;
+
+10000 - 5000; becuase 5000 is minimum balance;
+
+SalaryAccount
+deposit --> there is no specific rule
+withdraw--> there is no specific rule
+
+SavingAccount
+deposit --> there is no specific rule
+withdraw--> account should have 5000rs as minimum balance
+
+BusinessAccount
+deposit --> if deposit amount is greater than 2500000, then we must add 0.1 percentage
+
+withdraw--> you can withdraw money even your account do not have any money (balance = 0). You can withdraw upto -500000 rs
+
+================================================================
+String
+================================================================
+
+1. set of characters is nothing but a string
+2. string must be enclosed with in " "
+
+ 
+
+	String name = "Nandu";
+	
+	name = "Nandu Mahajan";
+	
+	Immutable means where in the memory a value is stored, in that location we can't change the stored value.
+	
+3. A string in java is an immutable object, which makes it constant.
+
+4. Hence, a string that has been created cannot be changed.
+
+A string can be created in two ways
+	1. String litteral
+		String message="Hello";
+		
+	2. new keyword
+	String s1 = new String("Hello");
+	
+Mutable Strings
+	1. Mutable string in java enables the modification of characgters with in string.
+	
+	2. Through mutable strings, you can add, remove or edit the characters with in it.
+	
+	3.  To make a string mutable, you can use StringBuffer and StringBuilder classes.
+	
+	StringBuffer is synchronizable. (Is is used with threas)
+	
+	StringBuilder is non-synchronizable. (It is not used with threads)
+===============================================================
+Exception Handling
+===============================================================
+
+Exception
+	A runtime error.
+	
+	When exception araises then the code from that position will never execute.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+1
+2
+3
+try {
+	4
+	5
+	6
+}
+catch(....) {
+	// exception handling
+}
+7
+8
+9
+10
+
+
+
+
+try
+catch
+finally
+
+throw
+throws
+
+If you have written a method with throws keyword , 
+	1. when you are calling that method, you must put that method inside try .. catch.
+	
+	or
+	2. that method should throws the exception.
+	
+
+XXXException
+
+MyAppEcxeption
+
+
